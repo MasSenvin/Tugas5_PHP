@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: todo.php");
             exit();
         } else {
-            echo "Login gagal. <a href='login.php'>Coba lagi</a>";
+            echo "Login gagal. <a href='index.php'>Coba lagi</a>";
         }
     } else {
         echo "Query error: " . mysqli_error($conn);
